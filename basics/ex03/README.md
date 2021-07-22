@@ -46,6 +46,7 @@
     [index.js]
     ```
         JAVASCRIPT
+        import { App } from './App.js'; 
         document.getElementById('root').appendChild(App());
     ```
     [App.js]
@@ -56,6 +57,7 @@
         app.textContent = 'Hello World';
         return app;
         }
+        export {App};
     ```
 
 5. 테스트(테스트 서버 실행)
