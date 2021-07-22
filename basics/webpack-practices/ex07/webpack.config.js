@@ -8,15 +8,8 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /.css$/i,
-            use: ['style-loader', 'css-loader']
-        },{        //정규표현식 [ac] -> sass 일수도 scss 일수도 있다.
-            test: /\.s[ac]ss$/i,
-            use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ]
+            test: /\.txt$/i,
+            loader: path.resolve('src/text-loader.js')
         }]
     },
 

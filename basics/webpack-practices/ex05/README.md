@@ -4,7 +4,7 @@
     $ mkdir ex05
     $ cd ex05
     $ npm init -y
-    $ npm i -D webpack webpack-cli webpack-dev server
+    $ npm i -D webpack webpack-cli webpack-dev-server
     $ npm i -D webpack css-loader style-loader sass-loader node-sass
 ```
 

@@ -1,8 +1,8 @@
 {
-  "name": "ex05",
+  "name": "ex06",
   "version": "1.0.0",
-  "description": "1. project 생성\r ``` bash\r     $ mkdir ex05\r     $ cd ex05\r     $ npm init -y\r     $ npm i -D webpack webpack-cli webpack-dev server\r     $ npm i -D webpack css-loader style-loader sass-loader node-sass\r ```",
-  "main": "index.js",
+  "description": "",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx webpack serve --progress",
@@ -13,16 +13,13 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "image-loader": "0.0.1",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
-    "server": "^1.0.34",
     "style-loader": "^3.2.1",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "scss-loader": "^0.0.1",
-    "webpack-dev": "^1.1.1"
   }
 }

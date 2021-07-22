@@ -12,11 +12,14 @@ module.exports = {
             use: ['style-loader', 'css-loader']
         },{        //정규표현식 [ac] -> sass 일수도 scss 일수도 있다.
             test: /\.s[ac]ss$/i,
-            use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ]
+            use: ['style-loader', 'css-loader', 'sass-loader']
+        },{
+            test: /\.svg$/i,
+            loader: 'file-loader',
+            options: {
+                outputPath: '/assets/images',
+                name: '[name].[ext]'
+            }
         }]
     },
 
