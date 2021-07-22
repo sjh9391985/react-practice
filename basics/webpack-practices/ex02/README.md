@@ -21,9 +21,26 @@
     |--- dev-server.mjs
     |--- webpack.config.js [webpack 설정 파일]
 
-3. test server 실행
+3. webpack.config.js
+```
+const path = require('path');
+
+module.exports = {
+    entry: path.resolve('src/index.js'),
+    output: {
+        path: path.resolve('public'),
+        filename: 'bundle.js'
+    }
+}
+```
+
+4. 빌드하기
+``` bash
+    $ npx webpack
+```
+
+5. test server 실행
 ``` bash
     $ node dev-server.mjs
     ES6 모듈로 실행(확장자를 .mjs) 로 해야함.
 ```
-
