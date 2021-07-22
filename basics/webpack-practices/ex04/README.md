@@ -1,4 +1,4 @@
-## Webpack-practices: ex01
+## Webpack-practices: ex04
 1. project 생성
 ``` bash
     $ mkdir ex04
