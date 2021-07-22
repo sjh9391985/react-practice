@@ -1,5 +1,5 @@
 ## Webpack-practices: ex07
-1. project 생성
+1. project 생성 [간단한 webpack loader 작성하고 설정해보기]
 ``` bash
     $ mkdir ex07
     $ cd ex07
