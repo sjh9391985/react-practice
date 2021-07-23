@@ -1,0 +1,12 @@
+{
+  "name": "ex07",
+  "version": "1.0.0",
+  "description": "1. project 생성\r ``` bash\r     $ mkdir ex07\r     $ cd ex07\r     $ npm init -y\r     $ npm i -D webpack webpack-cli webpack-dev-server\r     $ npm i react react-doom\r     $ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
