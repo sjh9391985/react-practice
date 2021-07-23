@@ -5,29 +5,34 @@
     $ cd ex07
     $ npm init -y
     $ npm i -D webpack webpack-cli webpack-dev-server
-    $ npm i react react-doom
-    $ npm i -D css-loader style-loader
-    $ npm i -D @babel/core @babel/preset-env @babel/cli
-
+    $ npm i -D css-loader style-loader file-loader
+    $ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+    $ npm i react react-dom
     
 ```
 
 2. 프로젝트 구조
+```
 /ex07
     |--- package.json
     |--- package-lock.json
     |--- node-modules
     |--- public
     |       |--- index.html
-    |       |--- bundle.js  [빌드결과물]
-    |       |--- bundle.js.LICENSE.txt
-    | 
+    |       |--- bundle.js
+    |       |--- favicon.ico
+    |       |--- assets
+    |       |       |--- images
+    |       |       |       |--- logo.svg
     |--- src
-    ---- [CSS 추가] ----
     |       |--- index.js
     |       |--- App.js
+    |       |--- App.css
+    |       |--- index.css
+    |       |--- logo.svg    
     |--- babel.config.json [babel 설정 파일]
     |--- webpack.config.js [webpack 설정 파일]
+```
 
 3. scripts
 ```
@@ -45,8 +50,18 @@ module.exports = {
         path: path.resolve('public'),
         filename: 'bundle.js'
     },
-    module: {
+    module:{
         rules: [{
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader']
+        },{
+            test: /\.(svg|jpe?g|gif|ico|)$/i,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'assets/images',
+                name: '[name].[ext]'
+            }
+        },{
             test: /\.js$/i,
             exclude: /node_modules/,
             use: {
@@ -81,8 +96,7 @@ module.exports = {
             "safari": "13"
         }
     }], "@babel/react"]
-  }
-
+}
 ```
 
 6. 빌드하기
