@@ -6,7 +6,10 @@
     $ npm init -y
     $ npm i -D webpack webpack-cli webpack-dev-server
     $ npm i react react-doom
-    $ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+    $ npm i -D css-loader style-loader
+    $ npm i -D @babel/core @babel/preset-env @babel/cli
+
+    
 ```
 
 2. 프로젝트 구조
@@ -29,33 +32,6 @@
 3. scripts
 ```
     json
-    {
-  "name": "ex07",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx webpack serve --progress",
-    "build": "npx webpack"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.2.2",
-    "webpack": "^5.46.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  }
-}
-
 
 ```
 

@@ -65,8 +65,6 @@ $ npx babel src/ex01.js -o dist/ex01.02.js
    [브라우저별 ES6호환 테이블](https://kangax.github.io/compat-table/es6/) 참고해서 설정한다.
    - 설정
 ```json
-   - 설정
-```json
 {
     "presets": [
         ["@babel/preset-env",{
