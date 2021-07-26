@@ -7,7 +7,8 @@
 ### ex04: Application 번들링: webpack
 ### ex05: React(API 기반) Application으로 리팩토링
 ### ex06: React(JSX 기반) Application으로 리팩토링: babel(transpile)
-### ex07: React 기본개념
+### ex07: ex00cra Reconfiguration
+### ex08: JSX Tutorials
 
 ### webpack-practices
 ### babel-practices

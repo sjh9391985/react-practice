@@ -9,7 +9,10 @@ module.exports = {
     module: {
         rules: [{
             test: /.css$/i,
-            use: ['style-loader', 'css-loader']
+            use:  [
+                'style-loader', 
+                {loader: 'css-loader', options: {modules: true} }
+                ]
         },{        //정규표현식 [ac] -> sass 일수도 scss 일수도 있다.
             test: /\.s[ac]ss$/i,
             use: [
