@@ -6,8 +6,8 @@ export default function(){
     
     return (
         <Fragment>
-            <Header name='Application03' height='10' />
+            <Header />
             <Content />
         </Fragment>
     );
-}
+}  
