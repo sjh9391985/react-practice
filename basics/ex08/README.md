@@ -8,6 +8,7 @@
 ### 06. 특징3: JSX 표현식 표기법 { _expression_ } 문제점: if-statement
 ### 07. 특징4: 공백(Blank Space)
 ### 08. Dynamic HTML Rendering
+### 09. Comment
 
 ### Run Examples
 ```bash
