@@ -11,19 +11,6 @@ module.exports = (env) => {
     },
     module:{
         rules: [{
-            test: /\.css$/i,
-            use: [
-                'style-loader', 
-                {loader: 'css-loader', options: {modules: true} }
-                ]
-        },{
-            test: /\.(svg|jpe?g|gif|ico|)$/i,
-            loader: 'file-loader',
-            options: {
-                outputPath: 'assets/images',
-                name: '[name].[ext]'
-            }
-        },{
             test: /\.js$/i,
             exclude: /node_modules/,
             use: {
