@@ -4,8 +4,7 @@
   "description": "1. project 생성\r ``` bash\r     $ mkdir ex05\r     $ cd ex05\r     $ npm init -y\r     $ npm i -D webpack webpack-cli webpack-dev server\r     $ npm i -D webpack css-loader style-loader sass-loader node-sass\r ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx webpack serve --progress",
+    "debug": "npx webpack serve --progress",
     "build": "npx webpack"
   },
   "keywords": [],
