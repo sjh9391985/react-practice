@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react';
 import GuestbookForm from './GuestbookForm';
 import GuestbookList from './GuestbookList';
-import infos from './data.json';
+import infos from './assets/json/data.json';
+import styles from './assets/scss/Guestbook.scss'
 
 export default function Guestbook({title}){
     return(
-        <div className={'Guestbook'}>
+        <div className={styles.Guestbook}>
             <h1>{title}</h1>
             <GuestbookForm />
             <GuestbookList key="1" name={'둘리'} infos={infos.filter(info => info.no=="1")} />
