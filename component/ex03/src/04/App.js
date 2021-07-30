@@ -16,25 +16,25 @@ export default function App() {
         console.log('onBlurInput');
     }
     const onMouseOverImage = function (e) {
-        console.log('onMouseOverImage');
+        console.log('onMouseOverImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onMouseMoveImage = function (e) {
-        console.log('onMouseMoveImage');
+        console.log('onMouseMoveImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onMouseOutImage = function (e) {
-        console.log('onMouseOutImage');
+        console.log('onMouseOutImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onMouseDownImage = function (e) {
-        console.log('onMouseDownImage');
+        console.log('onMouseDownImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onMouseUpImage = function (e) {
-        console.log('onMouseUpImage');
+        console.log('onMouseUpImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onClickImage = function (e) {
-        console.log('onClickImage');
+        console.log('onClickImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
     const onDoubleClickImage = function (e) {
-        console.log('onDoubleClickImage');
+        console.log('onDoubleClickImage',`x=${e.clientX}, y=${e.clientY}}`);
     }
 
 

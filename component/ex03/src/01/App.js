@@ -7,7 +7,7 @@ export default function () {
             console.log("click");
             } }
             style={ {
-                cursor:"pointer"
+                
             } }>
             ex03 - Inline Handler
         </h1>
