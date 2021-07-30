@@ -9,7 +9,9 @@ export default function CardList({title, cards}){
             { cards.map(card => <Card 
                                 key={card.no} 
                                 title={card.title}
-                                tasks={card.tasks}/>)}
+                                tasks={card.tasks}
+                                status = {card.status}
+                                description={card.description}/>)}
 
         </div>
         );
