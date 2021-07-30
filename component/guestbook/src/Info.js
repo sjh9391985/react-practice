@@ -5,6 +5,7 @@ export default function Info({no, name, message, regDate}){
     return(
 
         <ul className="Guestbook__List">
+
                 <li className={styles.Guestbook__List__Item}>
                     <strong>{name}</strong>
                     <p> { message && message.split('\n').map((line, index) => index > 0 ?
