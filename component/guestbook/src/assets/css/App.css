@@ -6,4 +6,4 @@ ul, ol	{ list-style-type: none }
 
 :global(#root),
 :global(.App) { height:100%; width:540px; margin:0 auto }
-
+/* overflow-y: scroll*/
