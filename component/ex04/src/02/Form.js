@@ -8,7 +8,8 @@ export default function Form() {
     const [email, setEmail] = useState(' ');
     const [validEmail, setValidEmail] = useState(false);
     const [gender, setGender] = useState('female');
-    const [birthyear, setBirthyear] = useState('1984');
+    const [birthyear, setBirthyear] = useState(1984);
+    const [agreeProv, setAgreeProv] = useState('no');
 
     const onChangeInputName = function (e) {
         //글 10자 제한
@@ -23,6 +24,18 @@ export default function Form() {
 
     const onChangeInputGender = function (e) {
         setGender(e.target.value);
+    }
+
+    const onChangeInputPorv = function (e) {
+        // 통신 API 호출
+        // ex) /prov/agree?status=(e.target.value == 'no' ? 'yes' : 'no')
+        const url = `/prov/agree?status=${(e.target.value == 'no' ? 'yes' : 'no')}`
+        console.log(url);
+
+        if(true){
+            setAgreeProv((e.target.value == 'no' ? 'yes' : 'no'));
+        }
+
     }
 
 
@@ -75,7 +88,13 @@ export default function Form() {
 
             <fieldset>
                 <legend>약관동의</legend>
-                <input id="agree-prov" type="checkbox" name="agreeProv" value= { "yes" } checked={ false } />
+                <input 
+                    id="agree-prov" 
+                    type="checkbox" 
+                    name="agreeProv" 
+                    value= { agreeProv } 
+                    checked={ agreeProv === 'yes' } 
+                    onChange={ onChangeInputPorv} />
                 <label>서비스 약관에 동의합니다.</label>
             </fieldset>
 
