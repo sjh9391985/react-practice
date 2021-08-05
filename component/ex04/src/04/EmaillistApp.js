@@ -13,7 +13,7 @@ export default function EmaillistApp () {
     }
 
     return (
-        <div className={ 'EmaillistApp' }>
+        <div className={ 'EmaillistApp' } >
 
             <SearchBar
                 callback = { notifyKeywordChanged} 
