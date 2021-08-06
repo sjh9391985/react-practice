@@ -18,5 +18,10 @@
 
 4. 예제: src/01
 
-## Function Component LifeCycle
-1. 대체(Alternative) <- 
+## Function Component LifeCycle: Hook 함수
+1. Alternative01: getDerivedStateFromProps
+2. After Rendering 함수
+3. 어떤 특정 값의 변화에 반응하는 After Rendering 함수
+4. Alternative02: componentDidMount
+5. Alternative03: componentDidUpdate
+6. Alternative04: componentWillUnmount
