@@ -4,9 +4,18 @@
     - getDerivedStateFromProps: props 로 받아온 값을 state에 동기화 한다. [REACT V16.3]
     - render
     - componentDidMount: 컴포넌트 생성을 마치고 첫 렌더링 작업이 끝난 후!
+
 2. Update LifeCycle 
     - getDerivedStateFromProps: props 로 받아온 값을 state에 동기화 한다. [REACT V16.3]
+    - shouldComponentUpdate: state이 변경 되었을 때, 렌더링 여부를 결정한다.
+    - render
+    - getSnapshotBeforeUpdate: render 메소드 호출 후, DOM에 변화를 반영하기 직전에 호출 
+    - *componentDidUpdate: DOM 업데이트가 끝난 직 후, DOM 작업이 가능하다.
+
 3. UnMount LifeCycle
+    - componentWillUnmount: 컴포넌트가 DOM에서 사라질 때.
+    
+
 4. 예제: src/01
 
 ## Function Component LifeCycle
