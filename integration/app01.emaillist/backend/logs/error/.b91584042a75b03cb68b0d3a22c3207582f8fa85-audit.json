@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\eclipse-jee-2021-03-R-win32-x86_64\\eclipse\\fileworkspace\\React-practices\\integration\\app01.emaillist\\backend\\logs\\error\\.b91584042a75b03cb68b0d3a22c3207582f8fa85-audit.json",
+    "files": [
+        {
+            "date": 1628479493762,
+            "name": "C:\\eclipse-jee-2021-03-R-win32-x86_64\\eclipse\\fileworkspace\\React-practices\\integration\\app01.emaillist\\backend\\logs\\error\\2021-08-09.error.log",
+            "hash": "a0a32cf2532dcafab00a88bfb3855a27"
+        }
+    ]
+}
