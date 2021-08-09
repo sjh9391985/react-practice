@@ -63,8 +63,9 @@ export default class Clock extends Component {
     componentDidMount() { // Clockcmp 컴포넌트가 불러올때마다 1초씩 this.Change()를 부른다 
         this.timeID = setInterval(
             () => this.Change()
-            ,1000
-            )
+           
+            
+            ,1000)
     }
 
 }
