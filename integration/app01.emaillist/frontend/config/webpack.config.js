@@ -23,7 +23,7 @@ module.exports = (env) => ({
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
-            options:{
+            options: {
                 configFile: path.resolve('frontend/config/babel.config.json')
             }
         }]
@@ -34,6 +34,9 @@ module.exports = (env) => ({
         watchContentBase: true,
         host: "0.0.0.0",
         port: 9999,
+        proxy: {
+            '/api': 'http://localhost:8888'
+        },
         inline: true,
         liveReload: true,
         hot: false,
@@ -41,4 +44,3 @@ module.exports = (env) => ({
         historyApiFallback: true
     }
 });
-

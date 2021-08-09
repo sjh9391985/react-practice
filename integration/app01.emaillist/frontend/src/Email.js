@@ -1,13 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 
 export default function Email({no, firstName, lastName, email}) {
-
     return (
         <li>
-            {`${ firstName } ${ lastName }`}
-            <br/>
+            { `${firstName} ${lastName}` }
+            <br/><br/>
             { email }
         </li>
     )
