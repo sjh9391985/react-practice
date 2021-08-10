@@ -3,7 +3,7 @@ import TaskList from './TaskList';
 import {PropTypes} from 'prop-types'
 import styles from './assets/scss/card.scss'
 
-export default function Card({ title, description, status, tasks }){
+export default function Card({ cardNo, title, description, status, tasks, notifyTask }){
 
     const [showDetails, setShowDetails] = useState(true);
 
@@ -15,6 +15,7 @@ export default function Card({ title, description, status, tasks }){
         width:3,
         backgroundColor: status == 'ToDo' ? '#3e7e28' : status == "Doing" ? '#bd8031' : '#222'
     }
+
     return(
         <div className={styles.Card}>
             <div style={styleSideColor} />
@@ -29,7 +30,12 @@ export default function Card({ title, description, status, tasks }){
             </div>
             {
             showDetails ?
-            <div className={styles.Card__Details}>{description}<TaskList tasks={tasks}/>
+            <div className={styles.Card__Details}>{description}
+                <TaskList 
+                    cardNo ={ cardNo }
+                    tasks={tasks}
+                    notifyTask = {notifyTask}
+                />
             </div>:
             null
             }

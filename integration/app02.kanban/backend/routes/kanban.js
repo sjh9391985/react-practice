@@ -1,8 +1,8 @@
-  const express = require('express');
+const express = require('express');
 const controller = require('../controllers/kanban');
 
 const router = express.Router();
 router.route('/cards').get(controller.readAllCards);
-router.route('/cards/:cardNo/task').post(controller.createTask);
+router.route('/card/:cardNo/task').post(controller.createTask);
 
 module.exports = router;
