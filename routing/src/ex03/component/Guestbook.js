@@ -1,29 +1,21 @@
 import React, {Fragment} from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import Header from '../layout/Header';
+import Navigation from '../layout/Navigation';
+import Footer from '../layout/Footer';
+import styles from '../assets/scss/component/Guestbook.scss';
 
-export default function(){
+export default function Guestbook(){
 
     return(
         <Fragment>
-
-            <div id="header">
-                <h1>Header</h1>
-            </div>
+            <Header/>
             
-            <div id="content">
+            <div className={styles.Guestbook}>
                 <h2>Guestbook</h2>    
             </div>
-
-            <div id='navigation'>
-                <ul>
-                    <li><NavLink to={'/'} >[Main]</NavLink></li>
-                    <li><NavLink to={'/gallery'} >[Gallery]</NavLink></li>
-                </ul>
-            </div>
-
-            <div id='footer'>
-                <p>(c)opyright 2021</p>
-            </div>
+            <Navigation />
+            <Footer />
         </Fragment>
     )
 }
